@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Order Summary</h2>
+    <div class="order-summary">
+        <p>chicken FriedMandi x 1 (₹299)</p>
+        <p>Haleem x 1 (₹99)</p>
+        <p>Mutton Fried Mandi x 1 (₹499)</p>
+        <p>Mutton Juicy Mandi x 1 (₹599)</p>
+        <p>Chicken Juicy Mandi x 1 (₹399)</p>
+        <p>Total: (₹1,895)</p>
+    </div>
+    <button id="payBtn" onclick="processPayment()">Pay Now</button>
+
+    <div id="animation" class="hidden">
+        <h3>Order Placed!</h3>
+        <div class="loading-animation">Preparing your order...</div>
+        <div id="timer">Time Left: 3:00</div>
+    </div>
+
+    <!-- Review Section -->
+    <div class="review-section">
+        <h3>Leave a Review</h3>
+        <form id="reviewForm">
+            <textarea id="reviewText" rows="4" placeholder="Write your review here..." required></textarea>
+            <br>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
